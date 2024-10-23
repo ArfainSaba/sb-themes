@@ -1,6 +1,8 @@
+@use 'sass:math'; // Import the math module
+
 @function calculateRem($size) {
-	$remSize: $size / 16px;
-	@return #{$remSize}rem;
+    $remSize: math.div($size, 16px); // Use math.div() for division
+    @return #{$remSize}rem;
 }
 
 html[data-theme='Default'] {

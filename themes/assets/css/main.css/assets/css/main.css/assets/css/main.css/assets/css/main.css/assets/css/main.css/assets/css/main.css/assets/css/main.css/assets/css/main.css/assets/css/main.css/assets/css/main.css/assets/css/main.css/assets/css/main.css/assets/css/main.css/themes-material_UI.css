@@ -1,0 +1,761 @@
+@charset "UTF-8";
+html[data-theme=Default] {
+  --mat-tab-labels-bg: var(--white);
+  --mat-tooltip-text: var(--gray-800);
+  --mat-accordion-expansion-panel-bg: var(--white);
+  --mat-accordion-expansion-panel-header-bg: var(--white);
+  --mat-accordion-expansion-panel-body-bg: var(--primary-0);
+  --sb-mat-accordion-bg: var(--white);
+  --mat-accordion-tab-label-bg: var(--white);
+  --mat-accordion-tab-body-active-bg: var(--white);
+  --mat-accordion-tabs-label-active-after-bg: var(--white);
+  --mat-datepicker-form-bg: var(--white);
+  --mat-datepicker-calender-bg: var(--white);
+  --mat-datepicker-calender-body-selected-txt: var(--white);
+  --mat-modal-title-bg: var(--primary-color);
+  --mat-modal-content-bg: var(--white);
+  --mat-dropdown-form-bg: var(--white);
+}
+
+html[data-theme=Default] .sb-mat__accordion.mat-accordion .mat-expansion-panel {
+  border-radius: 0.25rem;
+}
+
+html[data-theme=Default][layout=joy] {
+  --sbfaq-compt-bg: #e9e8d9;
+  --sb-mat-accordion-bg: var(--sbfaq-compt-bg);
+}
+
+html[layout=joy] {
+  --mat-tab-labels-bg: var(--sbt-body-bg2);
+  --mat-accordion-tab-body-active-bg: var(--sbt-body-bg);
+  --mat-accordion-tab-label-bg: var(--sbt-body-bg);
+  --mat-accordion-tabs-label-active-after-bg: var(--sbt-body-bg);
+  --sb-mat-accordion-bradius: 1.5rem;
+  --sb-mat-accordion-bg: var(--sbt-body-bg);
+}
+
+html[layout=joy] .mat-tab__usage-report .mat-tab-header {
+  border-radius: 1rem;
+}
+
+html[layout=joy] .sb-mat__accordion.mat-accordion .mat-expansion-panel {
+  border-radius: var(--sbt-bradius-24);
+  box-shadow: none;
+  border: none;
+}
+
+html[layout=joy] .sb-mat__dropdown.sb-mat__dropdown--autocmp.mat-form-field-appearance-fill .mat-form-field-flex {
+  padding: 0px 0.75rem 0 1rem;
+  background: transparent;
+}
+
+html[layout=joy] .cdk-overlay-container .cdk-global-overlay-wrapper .mat-dialog-container {
+  border-radius: 24px;
+}
+
+html[layout=joy] .cdk-overlay-container .cdk-global-overlay-wrapper .mat-dialog-container .sb-mat__modal .mat-dialog-title {
+  padding: 1rem 1.5rem 0 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+html[layout=joy] .cdk-overlay-container .cdk-global-overlay-wrapper .mat-dialog-container .sb-mat__modal__actions {
+  border: none;
+  padding: 0 1rem 1.5rem 1rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+html[layout=joy] .cdk-overlay-container .cdk-global-overlay-wrapper .mat-dialog-container .sb-mat__modal .close-btn {
+  background: var(--white);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  box-shadow: var(--sbt-box-shadow-3px);
+}
+
+html[layout=joy] .cdk-overlay-container .cdk-global-overlay-wrapper .mat-dialog-container .sb-mat__modal .close-btn::after {
+  color: var(--red);
+}
+
+html[data-theme=Darkmode] {
+  --gray-222: #222;
+  --sb-mat-accordion-bg: var(--sbt-body-bg);
+  --mat-accordion-tab-label-bg: var(--gray-222);
+  --mat-accordion-tab-body-active-bg: var(--gray-222);
+  --mat-accordion-tabs-label-active-after-bg: var(--gray-222);
+  --mat-datepicker-form-bg: var(--gray-222);
+  --mat-datepicker-calender-bg: var(--gray-222);
+  --mat-datepicker-calender-body-selected-txt: var(--gray);
+  --mat-modal-title-txt: var(--white);
+  --mat-modal-content-txt: var(--white);
+  --mat-dropdown-form-bg: var(--gray-222);
+}
+
+html[data-theme=Darkmode] .mat-tab__usage-report canvas,
+html[data-theme=Darkmode] mat-tab-group canvas {
+  filter: invert(1);
+}
+
+html[data-theme=Darkmode] .mat-calendar-arrow {
+  filter: invert(1);
+}
+
+html[layout=joy],
+html[data-theme=Darkmode] {
+  --mat-tab-labels-bg: var(--sbt-body-bg2);
+  --mat-accordion-expansion-panel-bg: var(--sbt-compt-bg);
+  --mat-accordion-expansion-panel-header-bg: var(--sbt-compt-bg);
+  --mat-accordion-expansion-panel-body-bg: var(--sbt-compt-bg);
+  --mat-modal-title-bg: var(--sbt-compt-bg);
+  --mat-modal-content-bg: var(--sbt-compt-bg);
+}
+
+html[data-theme=Default],
+html[layout=joy] {
+  --mat-modal-title-txt: var(--sb-modal-header-text);
+  --mat-modal-content-txt: var(--gray-800);
+}
+
+/* Material Tab starts here */
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: var(--primary-color);
+}
+
+.mat-tab__usage-report .mat-tab-header {
+  background: var(--mat-tab-labels-bg);
+}
+
+.mat-tab__usage-report .mat-tab-header .mat-tab-label {
+  color: var(--gray-800);
+}
+
+.sb-mat__accordion .mat-tab-label,
+.mat-tab__usage-report .mat-tab-label {
+  opacity: 1;
+}
+
+/* Material Tab ends here */
+/* Tab Group inside Accordion starts here */
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-tab-header {
+  border-bottom: none;
+}
+
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-tab-body.mat-tab-body-active {
+  background: var(--mat-accordion-tab-body-active-bg);
+  border: 1px solid var(--gray-100);
+  border-top: none;
+  padding: 1rem;
+}
+
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-tab-body .mat-tab-body-content {
+  overflow: unset;
+}
+
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-tab-labels,
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-tab-label.mat-tab-label-active {
+  position: relative;
+}
+
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-tab-labels::after,
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-tab-label.mat-tab-label-active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-tab-labels::after {
+  height: 0.0625rem;
+  background: var(--gray-100);
+}
+
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-tab-label {
+  color: var(--gray-800);
+  opacity: 1;
+}
+
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-tab-label.mat-tab-label-active {
+  background: var(--mat-accordion-tab-label-bg);
+  border: 1px solid var(--gray-100);
+  border-bottom: none;
+  z-index: 1;
+}
+
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-tab-label.mat-tab-label-active::after {
+  height: 0.125rem;
+  background: var(--mat-accordion-tabs-label-active-after-bg);
+}
+
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc.list-all-mat-tab .mat-tab-label {
+  width: 50%;
+}
+
+mat-tab-group.sb-mat__tab.sb-mat__tab--tabinacc .mat-ink-bar {
+  display: none;
+}
+
+/* Tab Group inside Accordion ends here */
+.mat-slide-toggle .mat-slide-toggle-bar {
+  background-color: var(--gray-300);
+  height: 1.5rem;
+  width: 3.5rem;
+  border-radius: 1rem;
+}
+
+.mat-slide-toggle .mat-slide-toggle-bar .mat-slide-toggle-thumb-container {
+  top: 0;
+}
+
+.mat-slide-toggle .mat-slide-toggle-bar .mat-slide-toggle-thumb-container,
+.mat-slide-toggle .mat-slide-toggle-bar .mat-slide-toggle-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: var(--primary-color);
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar .mat-slide-toggle-thumb-container {
+  transform: translate3d(2rem, 0, 0);
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb,
+.mat-slide-toggle.mat-checked .mat-ripple-element {
+  background-color: var(--white);
+}
+
+mat-tooltip-component .mat-tooltip {
+  padding: 0.5rem 0.875rem;
+  font-size: 0.75rem;
+  margin: 0.375rem;
+  background: var(--mat-tooltip-text);
+}
+
+.sb-mat__accordion.mat-accordion .mat-expansion-panel {
+  background: var(--mat-accordion-expansion-panel-bg);
+  color: var(--gray-800);
+  margin-bottom: 0.5rem;
+  border: 0.5px solid var(--primary-300);
+  box-shadow: 0 0.1875rem 0.25rem 0 rgba(var(--rc-rgba-primary), 0.1) !important;
+}
+
+.sb-mat__accordion.mat-accordion .mat-expansion-panel.mat-expansion-panel-spacing {
+  margin: 1rem 0;
+}
+
+.sb-mat__accordion.mat-accordion .mat-expansion-panel-header {
+  height: 3.5rem !important;
+  font-size: 1rem;
+  font-weight: bold;
+  background: var(--mat-accordion-expansion-panel-header-bg) !important;
+}
+
+.sb-mat__accordion.mat-accordion .mat-expansion-panel-header .mat-expansion-panel-header-title {
+  color: var(--primary-color);
+}
+
+.sb-mat__accordion.mat-accordion .mat-expansion-panel-header .mat-expansion-indicator::after {
+  border-width: 0 0.1875rem 0.1875rem 0;
+  color: var(--primary-color);
+}
+
+.sb-mat__accordion.mat-accordion .mat-expansion-panel-content .mat-expansion-panel-body {
+  padding: 1rem;
+  background: var(--mat-accordion-expansion-panel-body-bg);
+}
+
+/* mat accordion styles */
+.sb-mat-accordion {
+  display: block;
+}
+
+.sb-mat-accordion .mat-expansion-panel {
+  background: var(--sb-mat-accordion-bg);
+  border-radius: var(--sb-mat-accordion-bradius) !important;
+}
+
+.sb-mat-accordion .mat-expansion-panel .mat-expansion-panel-header {
+  font-size: 1rem;
+}
+
+.sb-mat-accordion .mat-expansion-panel .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled=true]),
+.sb-mat-accordion .mat-expansion-panel .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled=true]), .sb-mat-accordion .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+  background: transparent;
+}
+
+.sb-mat-accordion .mat-expansion-panel-header-title,
+.sb-mat-accordion .mat-expansion-panel-header-description,
+.sb-mat-accordion .mat-expansion-indicator::after {
+  color: var(--gray-800);
+}
+
+.sb-mat-accordion__title {
+  font-size: 1rem;
+}
+
+.sb-mat-accordion__content {
+  background: transparent;
+  color: var(--gray-800);
+}
+
+.sb-mat-accordion.sbt-filter-accordion .mat-expansion-panel {
+  overflow: inherit;
+  background: transparent;
+  box-shadow: none;
+}
+
+.sb-mat-accordion.sbt-filter-accordion .mat-expansion-panel-header {
+  height: auto !important;
+}
+
+.sb-mat-accordion.sbt-filter-accordion .mat-expansion-panel-header .mat-expansion-indicator {
+  display: none;
+}
+
+.sb-mat-accordion.sbt-filter-accordion .mat-expansion-panel-body {
+  padding: 0 0;
+}
+
+.sb-mat-accordion.sbt-filter-accordion .mat-expansion-panel .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled=true]),
+.sb-mat-accordion.sbt-filter-accordion .mat-expansion-panel .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled=true]),
+.sb-mat-accordion.sbt-filter-accordion .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+  background: none;
+}
+
+/* mat accordion styles */
+/* Datepicker starts here*/
+.sb-mat__datepicker.mat-form-field-appearance-fill .mat-form-field-flex {
+  padding: 0;
+  flex-direction: row-reverse;
+  border-radius: 0.25rem;
+  align-items: center;
+  background-color: var(--mat-datepicker-form-bg);
+  border: 1px solid var(--gray-200);
+  height: 3rem;
+}
+
+html[layout=joy] .sb-mat__datepicker.mat-form-field-appearance-fill .mat-form-field-flex {
+  border-radius: 1.5rem;
+}
+
+.sb-mat__datepicker.mat-form-field-appearance-fill .mat-form-field-infix {
+  padding: 0.25em 0 0.25em;
+}
+
+.sb-mat__datepicker.mat-form-field-appearance-fill.sb-mat__datepicker--nolabel .mat-form-field-flex {
+  height: auto;
+}
+
+.sb-mat__datepicker.mat-form-field-appearance-fill.sb-mat__datepicker--nolabel .mat-form-field-infix {
+  border-top: none;
+}
+
+.sb-mat__datepicker.mat-form-field-appearance-fill .mat-form-field-underline {
+  display: none;
+}
+
+.mat-datepicker-content .mat-calendar {
+  background-color: var(--mat-datepicker-calender-bg);
+  color: var(--gray-800);
+  border: 1px solid var(--gray-200);
+  border-radius: 0.25rem;
+}
+
+.mat-calendar-body-cell-content.mat-calendar-body-selected {
+  background-color: var(--primary-color);
+  color: var(--mat-datepicker-calender-body-selected-txt);
+  box-shadow: none;
+}
+
+.mat-datepicker-toggle,
+.mat-datepicker-content .mat-calendar-next-button,
+.mat-datepicker-content .mat-calendar-previous-button,
+.mat-calendar-table-header,
+.mat-calendar-body-cell-content,
+.mat-date-range-input-separator,
+.mat-calendar-body-label,
+.mat-calendar-arrow {
+  color: var(--gray-800);
+}
+
+.mat-icon-button.mat-button-disabled.mat-button-disabled,
+.mat-calendar-body-disabled > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+  color: var(--gray-200);
+}
+
+/* Datepicker ends here*/
+/* Material Modals starts here */
+.cdk-overlay-pane.material-modal {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.cdk-overlay-pane .mat-dialog-container {
+  padding: 0;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: none;
+  position: relative;
+}
+
+.cdk-overlay-pane .mat-dialog-container .mat-dialog-content {
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.cdk-overlay-pane.overflow-visible {
+  max-width: 100% !important;
+}
+
+.cdk-overlay-pane.overflow-visible .mat-dialog-container {
+  overflow: inherit;
+}
+
+.cdk-overlay-pane.overflow-visible .mat-dialog-container .mat-dialog-content {
+  overflow: inherit;
+}
+
+.cdk-overlay-pane.overflow-visible .sb-mat__modal__content {
+  overflow-y: visible;
+  max-height: inherit;
+}
+
+.cdk-overlay-pane .sb-mat__modal {
+  max-width: 45rem;
+  width: 100%;
+  margin: 2% auto 0 auto;
+}
+
+.cdk-overlay-pane .sb-mat__modal--small {
+  max-width: 480px;
+}
+
+.cdk-overlay-pane .sb-mat__modal--large {
+  max-width: 56.25rem;
+}
+
+.cdk-overlay-pane .sb-mat__modal--fullscreen {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.cdk-overlay-pane .sb-mat__modal__content {
+  padding: 1rem;
+  max-height: 400px;
+  min-height: 100px;
+  background: var(--mat-modal-content-bg);
+  color: var(--mat-modal-content-txt);
+  overflow-y: auto;
+}
+
+.cdk-overlay-pane .sb-mat__modal__actions {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  background-color: var(--mat-modal-content-bg);
+  border-top: 0.5px solid var(--gray-100);
+  justify-content: flex-end;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+html[layout=joy] .cdk-overlay-pane .sb-mat__modal__actions {
+  border: none;
+}
+
+.cdk-overlay-pane .sb-mat__modal .mat-dialog-title {
+  background: var(--mat-modal-title-bg);
+  color: var(--mat-modal-title-txt);
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 1rem;
+  margin: 0;
+  min-height: 2.5rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.cdk-overlay-pane .sb-mat__modal .mat-dialog-title .title {
+  font-size: 1rem;
+  font-weight: 700;
+  flex: 1;
+}
+
+.cdk-overlay-pane .sb-mat__modal .close-btn {
+  background: inherit;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.cdk-overlay-pane .sb-mat__modal .close-btn::after {
+  color: var(--white);
+  content: "✕";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.sb-mat__modal.sb-notification-modal {
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+
+.sb-mat__modal.sb-notification-modal .sb-notification-container {
+  position: relative;
+}
+
+.sb-mat__modal.sb-notification-modal .sb-notification-list-items {
+  max-height: 100%;
+  overflow-y: inherit;
+}
+
+.sb-mat__modal.sb-mat__modal--course-complete .sb-mat__modal__content {
+  position: relative;
+  border-radius: 1.5rem;
+}
+
+.sb-mat__modal.sb-mat__modal--course-complete .close-btn {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+/* Material Modals ends here */
+/* Material Select starts here */
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill.mat-form-field-should-float .mat-form-field-flex {
+  align-items: flex-end;
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill.mat-form-field-should-float .mat-select {
+  margin-top: 2px;
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill.mat-form-field-should-float .mat-select-arrow-wrapper {
+  transform: translateY(-30%);
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+  transform: translateY(0%);
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: var(--mat-dropdown-form-bg);
+  border: 1px solid var(--primary-color);
+  border-radius: 0.25rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+
+html[layout=joy] .sb-mat__dropdown.mat-form-field-appearance-fill .mat-form-field-flex {
+  border-radius: 1.5rem;
+  border-color: transparent;
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-form-field-infix {
+  padding: 0;
+  border-top: none;
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-select-trigger {
+  height: 1.25rem;
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-select-value {
+  font-weight: bold;
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-select-arrow,
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-select-value {
+  color: var(--primary-color);
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-form-field-label {
+  color: var(--gray-800);
+  margin-bottom: 0;
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-form-field-label.mat-form-field-empty {
+  transform: translateY(6px);
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-select-arrow {
+  margin: 4px 4px 0 4px;
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+  color: var(--primary-color);
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  transform: translateY(-0.4em) scale(0.7);
+  margin-bottom: 0;
+}
+
+.sb-mat__dropdown.mat-form-field-appearance-fill .mat-form-field-underline {
+  display: none;
+}
+
+.sb-mat__dropdown--nolabel.sb-mat__dropdown--language.mat-form-field-appearance-fill .mat-select-arrow,
+.sb-mat__dropdown--nolabel.sb-mat__dropdown--language.mat-form-field-appearance-fill .mat-select-value {
+  color: var(--secondary-color);
+}
+
+.sb-mat__dropdown--nolabel.sb-mat__dropdown--language.mat-form-field-appearance-fill .mat-select-value-text span {
+  display: flex;
+  align-items: center;
+}
+
+.sb-mat__dropdown--nolabel.sb-mat__dropdown--language.mat-form-field-appearance-fill .mat-select-value-text span::before {
+  content: "";
+  background: url(/assets/images/Language.svg) no-repeat center !important;
+  height: 1.25rem;
+  width: 1.25rem;
+  display: block;
+  margin-right: 0.5rem;
+}
+
+html[dir=rtl] .sb-mat__dropdown--nolabel.sb-mat__dropdown--language.mat-form-field-appearance-fill .mat-select-value-text span::before {
+  margin-left: 0.5rem;
+}
+
+.sb-mat__dropdown--nolabel.mat-form-field-appearance-fill.mat-form-field-should-float .mat-form-field-flex {
+  align-items: center;
+}
+
+.sb-mat__dropdown--nolabel.mat-form-field-appearance-fill.mat-form-field-should-float .mat-select-arrow-wrapper {
+  transform: translateY(0%);
+}
+
+.sb-mat__dropdown--nolabel.mat-form-field-appearance-fill .mat-form-field-flex {
+  padding: 0 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--sbt-box-shadow-6px);
+}
+
+.sb-mat__dropdown--nolabel.mat-form-field-appearance-fill .mat-form-field-infix {
+  border-top: none;
+  padding: 0;
+}
+
+.sb-mat__dropdown--nolabel.mat-form-field-appearance-fill .mat-select {
+  font-size: 1rem;
+}
+
+.sb-mat__dropdown--nolabel.mat-form-field-appearance-fill .mat-select-arrow {
+  margin-top: 0;
+}
+
+.sb-mat__dropdown--nolabel.mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+  transform: unset;
+}
+
+.mat-select-panel {
+  background: var(--mat-dropdown-form-bg);
+}
+
+html[layout=joy] .mat-select-panel {
+  border-radius: 1.5rem;
+}
+
+.mat-select-panel.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.mat-select-panel.mat-primary .mat-option.mat-selected:not(.mat-option-disabled).mat-dropdown__options span {
+  position: relative;
+}
+
+.mat-select-panel.mat-primary .mat-option.mat-selected:not(.mat-option-disabled).mat-dropdown__options span::before {
+  content: "";
+  display: inline-block;
+  top: 50%;
+  transform: rotate(45deg) translateY(-50%);
+  height: 0.75rem;
+  width: 0.375rem;
+  position: absolute;
+  right: 1rem;
+  border-bottom: 0.125rem solid var(--primary-color);
+  border-right: 0.125rem solid var(--primary-color);
+}
+
+html[dir=rtl] .mat-select-panel.mat-primary .mat-option.mat-selected:not(.mat-option-disabled).mat-dropdown__options span::before {
+  left: 1.5rem;
+  right: inherit;
+}
+
+.mat-select-panel.mat-primary .mat-option.mat-selected:not(.mat-option-disabled).mat-dropdown__options.mat-dropdown__options--language {
+  color: var(--secondary-color);
+}
+
+.mat-select-panel.mat-primary .mat-option.mat-selected:not(.mat-option-disabled).mat-dropdown__options.mat-dropdown__options--language span::before {
+  border-bottom-color: var(--secondary-color);
+  border-right-color: var(--secondary-color);
+}
+
+.mat-select-panel .mat-option {
+  color: var(--gray-800);
+}
+
+.mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple) {
+  background-color: transparent;
+}
+
+.mat-autocomplete-panel {
+  background: var(--mat-dropdown-form-bg);
+  color: var(--gray-800);
+}
+
+.mat-autocomplete-panel .mat-option {
+  color: var(--gray-800);
+}
+
+.mat-autocomplete-panel .mat-option.mat-selected:not(.mat-active):not(:hover):not(.mat-option-disabled) {
+  background: var(--mat-dropdown-form-bg);
+  color: var(--gray-800);
+}
+
+.mat-option.mat-selected:not(.mat-option-multiple):not(.mat-option-disabled) {
+  background: var(--mat-dropdown-form-bg);
+  color: var(--gray-800);
+}
+
+.sb-mat__dropdown.sb-mat__dropdown--autocmp.mat-form-field-appearance-fill .mat-form-field-infix {
+  padding: 0 0 0px 0;
+  margin-top: -0.0625rem;
+  font-size: 0.8125rem;
+  line-height: 2.5rem;
+}
+
+.sb-mat__dropdown.sb-mat__dropdown--autocmp,
+.sb-mat__dropdown.sb-mat__dropdown--autocmp.mat-form-field-appearance-fill .mat-form-field-flex {
+  height: 2.5rem;
+}
+
+/* Material Select ends here */
+
+
+/*# sourceMappingURL=themes-material_UI.css.map */

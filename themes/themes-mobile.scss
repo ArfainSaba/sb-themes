@@ -1,3 +1,7 @@
+@use './themes-mobile-aqua.scss';
+@use './themes-mobile-inded.scss';
+@use 'sass:color'; 
+
 html[data-theme="JOYFUL"] {
   .sbt-inside-page-container.ui.container {
     margin: 0 !important;
@@ -1708,8 +1712,10 @@ html[device-accessable-theme="accessible"][data-theme="JOYFUL"] {
   --app-medium-gray: #4a4a4a;
   --app-light-gray: #555;
   $red: #ad0011;
-  $gray-300: lighten($gray, 12%); // sub heading 2 #969696
-  $gray-400: lighten($gray, 8%); // sub heading #666666
+  $gray: #969696;
+  $gray-300: color.adjust($gray, $lightness: 12%);  // sub heading 2 #969696
+  $gray-400: color.adjust($gray, $lightness: 8%);  // sub heading #666666
+
 
   .sc-ion-label-ios-s > p {
     color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.25);
@@ -2568,5 +2574,3 @@ html[device-accessable-theme="accessible"][data-mode="DARKMODE"] {
   }
 }
 
-@import './themes-mobile-aqua.scss';
-@import './themes-mobile-inded.scss';
