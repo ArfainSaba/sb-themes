@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-  pull_request:
-  create:
-    tags: "*"
+  # pull_request:
+  # create:
+  #   tags: "*"
 
 jobs:
   code_quality:
