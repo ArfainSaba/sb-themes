@@ -40,7 +40,8 @@
 on:
   push:
     branches:
-      - src-pages
+      - main
+      - github-actions
     tags:
       - 'v*'  # Triggers when a version tag is pushed (e.g., v1.0.0)
 
