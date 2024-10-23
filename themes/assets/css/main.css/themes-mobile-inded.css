@@ -1,0 +1,55 @@
+html[data-theme=JOYFUL][data-color=inded] {
+  --app-primary:#64273c !important;
+  --app-primary-contrast:#fff;
+  --app-primary-shade: #461b2a;
+  --app-primary-tint: #dca097;
+  --app-primary-tint-contrast: #000;
+  --app-primary-background:#efefef;
+  --app-primary-header: var(--app-primary-tint);
+  --app-primary-header-light: var(--app-primary);
+  --cc-toc-card-item-title-hover:var(--app-primary);
+  --cc-accordion-panel-header-title:var(--app-primary);
+}
+html[data-theme=JOYFUL][data-color=inded] .cr-terms-checkbox {
+  --background-checked: var(--app-primary);
+  --border-color: var(--app-primary);
+  --border-color-checked: var(--app-primary);
+}
+html[data-theme=JOYFUL][data-color=inded] .app-title, html[data-theme=JOYFUL][data-color=inded] .title-class, html[data-theme=JOYFUL][data-color=inded] .item-label-stacked ion-select .select-text.select-placeholder, html[data-theme=JOYFUL][data-color=inded] .sb-popover .sb-popover-footer .sb-btn-outline-info, html[data-theme=JOYFUL][data-color=inded] .qr-instruction-container .qr-btn-container .qr-btn, html[data-theme=JOYFUL][data-color=inded] .cancel_info, html[data-theme=JOYFUL][data-color=inded] .sb-view-all-items * {
+  color: var(--app-primary-tint-contrast) !important;
+}
+html[data-theme=JOYFUL][data-color=inded] .sb-chapter-dd ion-icon svg, html[data-theme=JOYFUL][data-color=inded] .icon-svg--primary {
+  fill: var(--app-primary);
+}
+html[data-theme=JOYFUL][data-color=inded] .sb-btn-secondary, html[data-theme=JOYFUL][data-color=inded] .sb-popover .sb-popover-footer .sb-popover-action-btn.popover-color, html[data-theme=JOYFUL][data-color=inded] .sb-card-view-all-container .sb-card .sb-card-actions .action-btn.delete, html[data-theme=JOYFUL][data-color=inded] .sb-card-download-container .sb-card .sb-card-actions .action-btn.delete, html[data-theme=JOYFUL][data-color=inded] app-downloads-tab .sb-card-actions .action-btn.delete {
+  color: var(--app-primary-contrast) !important;
+}
+html[data-theme=JOYFUL][data-color=inded] .popover-ratings ion-icon.filled, html[data-theme=JOYFUL][data-color=inded] .sb-chapter-dd, html[data-theme=JOYFUL][data-color=inded] .sbchapter__play__btn, html[data-theme=JOYFUL][data-color=inded] .read-more, html[data-theme=JOYFUL][data-color=inded] .rating-opts .rating-item .rating-label.active-label, html[data-theme=JOYFUL][data-color=inded] .view-credits span, html[data-theme=JOYFUL][data-color=inded] .gd-tab-header .gd-tab.active .gd-tab-name, html[data-theme=JOYFUL][data-color=inded] .gd-card-head .gd-card-titile {
+  color: var(--app-primary) !important;
+}
+html[data-theme=JOYFUL][data-color=inded] .header-info, html[data-theme=JOYFUL][data-color=inded] .sb-slider-pills-container .sb-grade-pills-container .pill:active, html[data-theme=JOYFUL][data-color=inded] .sb-slider-pills-container .sb-grade-pills-container .pill.active, html[data-theme=JOYFUL][data-color=inded] .sb-btn-secondary, html[data-theme=JOYFUL][data-color=inded] .sb-popover .sb-popover-footer .sb-popover-action-btn.popover-color, html[data-theme=JOYFUL][data-color=inded] .letsgo-info, html[data-theme=JOYFUL][data-color=inded] .save-changes, html[data-theme=JOYFUL][data-color=inded] .sb-btn-large, html[data-theme=JOYFUL][data-color=inded] .cd-btn .sb-btn-large {
+  background-color: var(--app-primary) !important;
+}
+html[data-theme=JOYFUL][data-color=inded] .sb-view-all-container .sb-view-all-items {
+  background-color: var(--app-primary-tint) !important;
+}
+html[data-theme=JOYFUL][data-color=inded] .card-container.selected, html[data-theme=JOYFUL][data-color=inded] .letsgo-info, html[data-theme=JOYFUL][data-color=inded] .sbchapter__play__btn, html[data-theme=JOYFUL][data-color=inded] .save-changes, html[data-theme=JOYFUL][data-color=inded] .sb-btn-outline-info, html[data-theme=JOYFUL][data-color=inded] .gd-member-search input {
+  border-color: var(--app-primary) !important;
+}
+html[data-theme=JOYFUL][data-color=inded] .page-language-settings .continue img.arrow-icon.animate, html[data-theme=JOYFUL][data-color=inded] img.arrow-icon {
+  filter: invert(0);
+}
+html[data-theme=JOYFUL][data-color=inded] .sb-btn-secondary img.arrow-icon, html[data-theme=JOYFUL][data-color=inded] .filter-button img {
+  filter: invert(1);
+}
+html[data-theme=JOYFUL][data-color=inded] .sb-menu-icon .tool-icon, html[data-theme=JOYFUL][data-color=inded] ion-tab-button.tab-selected, html[data-theme=JOYFUL][data-color=inded] .profile ion-tabs ion-tab-button.tab-selected ion-icon, html[data-theme=JOYFUL][data-color=inded] .sb-side-menu .sb-menu-list .item ion-icon, html[data-theme=JOYFUL][data-color=inded] .icon-check.selected, html[data-theme=JOYFUL][data-color=inded] .filter-icon, html[data-theme=JOYFUL][data-color=inded] .sb-btn-tile img, html[data-theme=JOYFUL][data-color=inded] .sb-dt-card-actions button img, html[data-theme=JOYFUL][data-color=inded] app-application-header .ion-activatable.ion-focusable, html[data-theme=JOYFUL][data-color=inded] .card-icons {
+  filter: invert(55%) sepia(100%) saturate(1893%) hue-rotate(360deg) brightness(0%) contrast(107%);
+}
+html[data-theme=JOYFUL][data-color=inded] ion-button .tool-icon, html[data-theme=JOYFUL][data-color=inded] .sb-label-grid.sb-box-grid .item .sb-icon-img, html[data-theme=JOYFUL][data-color=inded] .tutorial-popover .popover-wrapper img.close-icon {
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
+}
+html[data-theme=JOYFUL][data-color=inded] .sb-label-grid.sb-box-grid .item .sb-icon-img, html[data-theme=JOYFUL][data-color=inded] app-profile .bottom-block .trainings .heading .refresh-icon, html[data-theme=JOYFUL][data-color=inded] app-profile .contacts .email.light .icon, html[data-theme=JOYFUL][data-color=inded] app-profile .contacts .phone.light .icon, html[data-theme=JOYFUL][data-color=inded] app-profile .contacts .email ion-icon {
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(0%) contrast(103%);
+}
+
+/*# sourceMappingURL=themes-mobile-inded.css.map */

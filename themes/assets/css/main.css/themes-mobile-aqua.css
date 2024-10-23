@@ -1,0 +1,189 @@
+html[data-theme=JOYFUL][data-color=aqua] {
+  --app-primary:#86d1d1 !important;
+  --app-primary-contrast:#000000;
+  --app-primary-shade: #77baba;
+  --app-primary-tint: #97e9e9;
+  --app-primary-background: var(--app-primary-tint);
+  --app-primary-header: var(--app-primary);
+  --app-primary-header-light: var(--app-primary-tint);
+  --app-tertiary-background:#F3F7FB;
+  --app-secondary-background: var(--app-primary-tint);
+  --cc-lb-card-stack-btn-bg: var(--app-primary-tint);
+  --cc-sbcard-bg:var(--app-primary-tint);
+  /* overwrites */
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-menu-icon .tool-icon, html[data-theme=JOYFUL][data-color=aqua] ion-tab-button.tab-selected, html[data-theme=JOYFUL][data-color=aqua] .profile ion-tabs ion-tab-button.tab-selected ion-icon, html[data-theme=JOYFUL][data-color=aqua] .sb-side-menu .sb-menu-list .item ion-icon, html[data-theme=JOYFUL][data-color=aqua] img.arrow-icon.animate, html[data-theme=JOYFUL][data-color=aqua] .selected-lang .language-selection .icon-check, html[data-theme=JOYFUL][data-color=aqua] img.arrow-icon {
+  filter: invert(55%) sepia(100%) saturate(1893%) hue-rotate(360deg) brightness(0%) contrast(107%);
+}
+html[data-theme=JOYFUL][data-color=aqua] ion-button .tool-icon, html[data-theme=JOYFUL][data-color=aqua] .sb-label-grid.sb-box-grid .item .sb-icon-img, html[data-theme=JOYFUL][data-color=aqua] .tutorial-popover .popover-wrapper img.close-icon {
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(97%) contrast(103%);
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-label-grid.sb-box-grid .item .sb-icon-img, html[data-theme=JOYFUL][data-color=aqua] app-profile .bottom-block .trainings .heading .refresh-icon, html[data-theme=JOYFUL][data-color=aqua] app-profile .contacts .email.light .icon, html[data-theme=JOYFUL][data-color=aqua] app-profile .contacts .phone.light .icon, html[data-theme=JOYFUL][data-color=aqua] app-profile .contacts .email ion-icon {
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(0%) contrast(103%);
+}
+html[data-theme=JOYFUL][data-color=aqua] ion-icon {
+  color: var(--app-primary) !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] ion-icon.arrow-icon, html[data-theme=JOYFUL][data-color=aqua] .top-back-button, html[data-theme=JOYFUL][data-color=aqua] .sb--card__title, html[data-theme=JOYFUL][data-color=aqua] .batch-detail, html[data-theme=JOYFUL][data-color=aqua] .lighter, html[data-theme=JOYFUL][data-color=aqua] .selected-lang .label-text, html[data-theme=JOYFUL][data-color=aqua] span.app-name, html[data-theme=JOYFUL][data-color=aqua] app-profile-settings .title, html[data-theme=JOYFUL][data-color=aqua] app-profile-settings .board-select-dummy .ps-board .ps-board-label, html[data-theme=JOYFUL][data-color=aqua] .explore-more-books, html[data-theme=JOYFUL][data-color=aqua] ion-button, html[data-theme=JOYFUL][data-color=aqua] .explore-more-content, html[data-theme=JOYFUL][data-color=aqua] app-resources sb-library-filters .sb-medium-pills-container .pill.active, html[data-theme=JOYFUL][data-color=aqua] app-resources sb-library-filters .sb-grade-pills-container .pill.active {
+  color: var(--app-primary-contrast) !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-label-grid .item, html[data-theme=JOYFUL][data-color=aqua] app-profile .contacts, html[data-theme=JOYFUL][data-color=aqua] .framework-block, html[data-theme=JOYFUL][data-color=aqua] app-profile .self-declare-teacher-details, html[data-theme=JOYFUL][data-color=aqua] .trainings .content {
+  background: var(--cc-sbcard-bg) !important;
+  border-color: transparent !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-label-grid .item {
+  border: 1px solid var(--app-primary-shade) !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] .segment-button-checked ion-label {
+  color: var(--app-primary);
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-popover .sb-popover-footer .sb-popover-action-btn.popover-color, html[data-theme=JOYFUL][data-color=aqua] .segment-button-indicator-background, html[data-theme=JOYFUL][data-color=aqua] .block-button-save, html[data-theme=JOYFUL][data-color=aqua] app-profile .roles-container .roles, html[data-theme=JOYFUL][data-color=aqua] app-profile .contacts .phone, html[data-theme=JOYFUL][data-color=aqua] app-profile .contacts .email, html[data-theme=JOYFUL][data-color=aqua] .sb-btn-large, html[data-theme=JOYFUL][data-color=aqua] app-profile-settings div.ion-padding.ion-no-border, html[data-theme=JOYFUL][data-color=aqua] .header-info, html[data-theme=JOYFUL][data-color=aqua] .sign-in-card-success .sign-in-block, html[data-theme=JOYFUL][data-color=aqua] ion-card, html[data-theme=JOYFUL][data-color=aqua] .content-preferences-info, html[data-theme=JOYFUL][data-color=aqua] .grid-container, html[data-theme=JOYFUL][data-color=aqua] .another-user-title {
+  background: var(--app-primary) !important;
+  color: var(--app-primary-contrast) !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] .content-preferences-info, html[data-theme=JOYFUL][data-color=aqua] .grid-container {
+  border-bottom: 0.3px solid transparent;
+  border-top: 0.3px solid transparent;
+  border: 1px solid transparent;
+}
+html[data-theme=JOYFUL][data-color=aqua] ion-card {
+  box-shadow: none !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] .stack-btn, html[data-theme=JOYFUL][data-color=aqua] sb-library-cards-stack .sbbtn, html[data-theme=JOYFUL][data-color=aqua] app-district-mapping .block-button-clear, html[data-theme=JOYFUL][data-color=aqua] .bottom-block {
+  background: transparent !important;
+  border: 1px solid var(--app-primary-tint) !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] .footer, html[data-theme=JOYFUL][data-color=aqua] .sb-btn-tile, html[data-theme=JOYFUL][data-color=aqua] .sb-side-menu ion-footer.side-menu-footer, html[data-theme=JOYFUL][data-color=aqua] .sb-side-menu ion-header, html[data-theme=JOYFUL][data-color=aqua] app-application-header ion-content, html[data-theme=JOYFUL][data-color=aqua] app-application-header .sb-menu-list, html[data-theme=JOYFUL][data-color=aqua] app-application-header ion-item, html[data-theme=JOYFUL][data-color=aqua] .app-user-home ion-content, html[data-theme=JOYFUL][data-color=aqua] app-search ion-content, html[data-theme=JOYFUL][data-color=aqua] app-admin-home ion-content, html[data-theme=JOYFUL][data-color=aqua] .preference-popup .modal-wrapper, html[data-theme=JOYFUL][data-color=aqua] .sb-popover ion-content, html[data-theme=JOYFUL][data-color=aqua] .sb-popover .sb-popover-footer, html[data-theme=JOYFUL][data-color=aqua] .sb-slider-pills-container .sb-pills-container .pill {
+  --background: var(--app-primary-tint) !important;
+  background: var(--background) !important;
+  background-color: var(--app-primary-tint) !important;
+  color: var(--app-primary-contrast);
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-slider-pills-container .sb-medium-pills-container .pill {
+  border: var(--app-primary-tint) 0.0625rem solid;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-resources sb-library-filters .sb-medium-pills-container .pill.active, html[data-theme=JOYFUL][data-color=aqua] app-resources sb-library-filters .sb-grade-pills-container .pill.active {
+  color: var(--app-primary-contrast) !important;
+  background-color: var(--app-primary-shade) !important;
+  border-color: var(--app-primary-shade) !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-admin-home ion-content, html[data-theme=JOYFUL][data-color=aqua] ion-content {
+  background-color: transparent !important;
+  --background: transparent !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-side-menu ion-footer.side-menu-footer {
+  border-radius: 0;
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-view-all-container .sb-view-all-items .sb-view-all-title, html[data-theme=JOYFUL][data-color=aqua] app-application-header .sb-menu-item, html[data-theme=JOYFUL][data-color=aqua] app-profile .contacts .email .value, html[data-theme=JOYFUL][data-color=aqua] app-profile .contacts .phone .value, html[data-theme=JOYFUL][data-color=aqua] .ftue-changes.select-alert .alert-button:last-child:not(:only-child), html[data-theme=JOYFUL][data-color=aqua] .ftue-changes.select-alert .alert-button:first-child:not(:only-child), html[data-theme=JOYFUL][data-color=aqua] .select-box.select-alert .alert-button:last-child:not(:only-child), html[data-theme=JOYFUL][data-color=aqua] .select-box.select-alert .alert-button:first-child:not(:only-child), html[data-theme=JOYFUL][data-color=aqua] .header-info .theme-header-info, html[data-theme=JOYFUL][data-color=aqua] .header-info .learning-info {
+  color: var(--app-primary-contrast) !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-view-all-container .sb-view-all-items {
+  background-color: transparent;
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-card-container .sb-card {
+  background: var(--cc-sbcard-bg);
+  border-bottom: 1px solid var(--app-primary);
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-card-container .sb-card.sb-card-active, html[data-theme=JOYFUL][data-color=aqua] .trainings .heading, html[data-theme=JOYFUL][data-color=aqua] .qr-board::after, html[data-theme=JOYFUL][data-color=aqua] .alert-button-group.sc-ion-alert-md {
+  background: var(--app-primary-shade) !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-download-manager .sb-card-download-container .check-container {
+  background-color: var(--app-primary-shade);
+}
+html[data-theme=JOYFUL][data-color=aqua] ion-checkbox {
+  --border-color: var(--app-primary-tint);
+  --background-checked: var(--app-primary-tint);
+  --border-color-checked: var(--app-primary-tint);
+}
+html[data-theme=JOYFUL][data-color=aqua] ion-tabs ion-tab-bar, html[data-theme=JOYFUL][data-color=aqua] .sign-in-card-success .sign-in-block, html[data-theme=JOYFUL][data-color=aqua] .language-card label, html[data-theme=JOYFUL][data-color=aqua] .popover-wrapper .popover-content, html[data-theme=JOYFUL][data-color=aqua] .card-container, html[data-theme=JOYFUL][data-color=aqua] .sb-label-grid.icon-header .item .img {
+  background: var(--app-primary-tint);
+}
+html[data-theme=JOYFUL][data-color=aqua] ion-tabs ion-tab-button.qrscanner ion-icon {
+  border-color: var(--app-primary);
+}
+html[data-theme=JOYFUL][data-color=aqua] app-profile .school-details {
+  background-color: var(--app-primary-shade) !important;
+  border-bottom: 0.3px solid var(--app-primary-shade) !important;
+  border-top: 0.3px solid var(--app-primary-shade) !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-profile .school-details .location-mapping-block {
+  background-color: var(--app-primary-tint);
+}
+html[data-theme=JOYFUL][data-color=aqua] body, html[data-theme=JOYFUL][data-color=aqua] .sb-members-list-item .sb-member__img {
+  background-color: var(--app-primary);
+}
+html[data-theme=JOYFUL][data-color=aqua] body::before {
+  content: "";
+  width: 40%;
+  height: 180px;
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  position: absolute;
+  left: -10%;
+  z-index: 9;
+  top: 30%;
+  filter: invert(1);
+}
+html[data-theme=JOYFUL][data-color=aqua] body::after {
+  content: "";
+  width: 40%;
+  height: 180px;
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  right: -20%;
+  transform: rotate(-70deg);
+  bottom: 10%;
+  filter: invert(1);
+}
+html[data-theme=JOYFUL][data-color=aqua] ion-app {
+  z-index: 10;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-admin-home sb-pills-grid .sb-label-grid.show-icon.sb-box-grid div.item:nth-child(1) {
+  background-color: #a594d3 !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-admin-home sb-pills-grid .sb-label-grid.show-icon.sb-box-grid div.item:nth-child(2) {
+  background-color: #88ceeb !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-admin-home sb-pills-grid .sb-label-grid.show-icon.sb-box-grid div.item:nth-child(3) {
+  background-color: #d1b9e5 !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-admin-home sb-pills-grid .sb-label-grid.show-icon.sb-box-grid div.item:nth-child(4) {
+  background-color: #e4dc92 !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-admin-home sb-pills-grid .sb-label-grid.show-icon.sb-box-grid div.item:nth-child(5) {
+  background-color: #a8d386 !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-admin-home sb-pills-grid .sb-label-grid.show-icon.sb-box-grid div.item:nth-child(6) {
+  background-color: #eeffcb !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-admin-home sb-pills-grid .sb-label-grid.show-icon.sb-box-grid div.item:nth-child(7) {
+  background-color: #beb7e4 !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] app-admin-home sb-pills-grid .sb-label-grid.show-icon.sb-box-grid div.item:nth-child(8) {
+  background-color: #c9bf9d !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] .selected-lang .language-selection, html[data-theme=JOYFUL][data-color=aqua] .card-container {
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+html[data-theme=JOYFUL][data-color=aqua] .container-focus {
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.1));
+}
+html[data-theme=JOYFUL][data-color=aqua] .sb-btn-primary-outline, html[data-theme=JOYFUL][data-color=aqua] .sb-btn, html[data-theme=JOYFUL][data-color=aqua] .sb-btn-secondary, html[data-theme=JOYFUL][data-color=aqua] .qr-btn, html[data-theme=JOYFUL][data-color=aqua] .letsgo-info, html[data-theme=JOYFUL][data-color=aqua] .cancel_info {
+  color: var(--app-primary-contrast) !important;
+  background-color: var(--app-primary) !important;
+  border: 0.0625rem solid var(--app-primary) !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] .ftue-changes.select-alert .alert-wrapper button[aria-checked=true] {
+  background: var(--app-primary-shade) !important;
+  border-radius: 0 !important;
+}
+html[data-theme=JOYFUL][data-color=aqua] ion-item.item-label-stacked {
+  --background: transparent;
+}
+
+/*# sourceMappingURL=themes-mobile-aqua.css.map */
