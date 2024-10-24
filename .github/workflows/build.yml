@@ -7,25 +7,8 @@ on:
       - github-actions
     tags:
       - "*"
-  # pull_request:
-  # create:
-  #   tags: "*"
 
 jobs:
-  # code_quality:
-  #   runs-on: ubuntu-latest
-  #   steps:
-      
-  publish_npm:
-    if: startsWith(github.ref, 'refs/tags/')
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Publish to NPM
-        run: |
-          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-          npm publish
-
   build_app:
     runs-on: ubuntu-latest
     steps:
@@ -37,4 +20,13 @@ jobs:
       - name: lint check
         run: npx stylelint "**/*.scss"
 
-  
+  publish_npm:
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish to NPM
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+          npm publish
+
