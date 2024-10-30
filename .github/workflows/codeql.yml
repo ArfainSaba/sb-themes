@@ -1,4 +1,3 @@
-
 name: CodeQL
 on:
   pull_request:
@@ -19,7 +18,6 @@ jobs:
 
       - name: Make destination directory for compiled CSS
         run: mkdir -vp /tmp/sb-themes/assets/css
-
 
       - name: Install Sass
         run: npm install -g sass
@@ -47,7 +45,6 @@ jobs:
           git config --local user.name 'GitHub Action'
           # git add assets/css/*
           # git commit -m 'Updates compiled CSS files'
-
 
       - name: Push changes
         uses: ad-m/github-push-action@master

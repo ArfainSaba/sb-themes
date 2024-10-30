@@ -17,6 +17,3 @@ jobs:
         run: npm run build
       - name: lint check
         run: npx stylelint "**/*.scss"
-
- 
- 
